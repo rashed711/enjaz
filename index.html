@@ -51,7 +51,7 @@
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/enjaz-logo-main.png" alt="Strategic Overview" style="max-height: 120px; width: auto;">
+        <img src="assets/img/enjaz-logo-main.png" alt="Strategic Overview" style="max-height: 90px; width: auto;">
         <div>
           <h1 class="sitename" style="margin:0; line-height:1;">Enjaz</h1>
           <h2 style="margin:0; font-size:16px; line-height:1.2; color:var(--accent-color);">Technology & Contracting
@@ -68,31 +68,10 @@
           <li><a href="#features">Products</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#features-tabs">Services</a></li>
-
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
-
     </div>
   </header>
 
@@ -111,9 +90,7 @@
               Enjaz for Technology & Contracting<br>
             </h2>
             <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
-              Your trusted partner in air outlets, cable trays and trunking systems, and integrated electromechanical
-              services. We deliver high-quality products that meet international standards to support the success of
-              your projects.
+              Your trusted partner in air outlets, cable trays, trunking systems, and electromechanical services — delivering quality products that meet international standards to support your projects.
             </p>
 
             <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
@@ -122,12 +99,12 @@
                 <i class="bi bi-arrow-right"></i>
               </a>
             </div>
-
+<!-- 
             <div class="hero-image-showcase" data-aos="fade-up" data-aos-delay="500">
               <div class="image-wrapper">
                 <img src="assets/img/about/about-enjaz.webp" class="img-fluid" alt="Strategic Overview">
               </div>
-            </div>
+            </div> -->
 
           </div>
 
@@ -135,17 +112,167 @@
       </div>
     </section><!-- /Hero Section -->
 
+
+    <!-- Team Section -->
+    <section id="projects" class="team section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="80">
+
+        <!-- <div class="team-header" data-aos="fade-up" data-aos-delay="200">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <h2>Our Projects</h2>
+              <p>We have delivered outstanding HVAC and electromechanical projects that demonstrate our commitment to
+                quality and precision.</p>
+            </div>
+            <div class="col-lg-6 d-flex justify-content-lg-end">
+              <div class="team-controls">
+                <button class="team-control-btn team-prev"><i class="bi bi-chevron-left"></i></button>
+                <button class="team-control-btn team-next"><i class="bi bi-chevron-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <div class="team-slider swiper init-swiper" data-aos="fade-up" data-aos-delay="300">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 700,
+              "autoplay": {
+                "delay": 2500
+              },
+              "slidesPerView": 1,
+              "spaceBetween": 30,
+              "navigation": {
+                "nextEl": ".team-next",
+                "prevEl": ".team-prev"
+              },
+              "breakpoints": {
+                "576": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                },
+                "992": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 30
+                },
+                "1200": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 30
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <div class="member-image">
+                  <img src="assets/img/products/Square Diffuser.png" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="member-content">
+                  <h3>Square Diffuser</h3>
+                  <span>Diffuser's</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <div class="member-image">
+                  <img src="assets/img/products/Round Diffuser.png" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="member-content">
+                  <h3>Round Diffuser</h3>
+                  <span>Diffuser's</span>
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <div class="member-image">
+                  <img src="assets/img/products/Exhaust Diffuser.png" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="member-content">
+                  <h3>Exhaust Diffuser</h3>
+                  <span>Diffuser's</span>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <div class="member-image">
+                  <img src="assets/img/products/Round Grille.png" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="member-content">
+                  <h3>Round Grille</h3>
+                  <span>Grille's</span>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <div class="member-image">
+                  <img src="assets/img/products/Jet Diffuser.png" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="member-content">
+                  <h3>Jet Diffuser</h3>
+                  <span>Diffuser's</span>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+            <div class="swiper-slide">
+              <div class="team-member">
+                <div class="member-image">
+                  <img src="assets/img/products/Disc Valve.png" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="member-content">
+                  <h3>Emily Rodriguez</h3>
+                  <span>Project Manager</span>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="swiper-slide">
+              <div class="team-member">
+                <div class="member-image">
+                  <img src="assets/img/products/jet Nozzel.png" class="img-fluid" alt="" loading="lazy">
+                </div>
+                <div class="member-content">
+                  <h3>jet Nozzel</h3>
+                  <span>Nozzeles</span>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                </div>
+              </div>
+            </div><!-- End slide item -->
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /Team Section -->
+
+
     <!-- About Section -->
     <section id="about" class="about section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row align-items-center justify-content-between g-lg-5">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="image-wrapper">
-              <img src="assets/img/about/about-products-enjaz.webp" class="img-fluid rounded" alt="About Us Image">
-            </div>
-          </div>
+          
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="content">
@@ -189,12 +316,18 @@
               </div>
             </div>
           </div>
+
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="image-wrapper">
+              <img src="assets/img/about/about-products-enjaz.webp" class="img-fluid rounded" alt="About Us Image">
+            </div>
+          </div>
         </div>
 
       </div>
 
     </section>
-
+    <hr>
     <!-- /About Section -->
 
 
@@ -231,7 +364,7 @@
 
     </section>
 
-
+<hr>
     <!-- Products Section -->
     <section id="features" class="features section">
 
@@ -411,142 +544,6 @@
     </section>
     <!-- /Products Section -->
 
-    <!-- Team Section -->
-    <section id="projects" class="team section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="team-header" data-aos="fade-up" data-aos-delay="200">
-          <div class="row align-items-center">
-            <div class="col-lg-6">
-              <h2>Our Projects</h2>
-              <p>We have delivered outstanding HVAC and electromechanical projects that demonstrate our commitment to
-                quality and precision.</p>
-            </div>
-            <div class="col-lg-6 d-flex justify-content-lg-end">
-              <div class="team-controls">
-                <button class="team-control-btn team-prev"><i class="bi bi-chevron-left"></i></button>
-                <button class="team-control-btn team-next"><i class="bi bi-chevron-right"></i></button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="team-slider swiper init-swiper" data-aos="fade-up" data-aos-delay="300">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 700,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": 1,
-              "spaceBetween": 30,
-              "navigation": {
-                "nextEl": ".team-next",
-                "prevEl": ".team-prev"
-              },
-              "breakpoints": {
-                "576": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 20
-                },
-                "992": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 30
-                },
-                "1200": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 30
-                }
-              }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="assets/img/person/person-m-3.webp" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="member-content">
-                  <h3>Marcus Wilson</h3>
-                  <span>Chief Technology Officer</span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.</p>
-                </div>
-              </div>
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="assets/img/person/person-f-5.webp" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="member-content">
-                  <h3>Sophia Reynolds</h3>
-                  <span>Product Designer</span>
-                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
-                </div>
-              </div>
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="assets/img/person/person-m-8.webp" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="member-content">
-                  <h3>Daniel Chen</h3>
-                  <span>Marketing Specialist</span>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-                </div>
-              </div>
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="assets/img/person/person-f-9.webp" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="member-content">
-                  <h3>Olivia Thompson</h3>
-                  <span>Lead Developer</span>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-                </div>
-              </div>
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="member-content">
-                  <h3>Jason Parker</h3>
-                  <span>UI/UX Designer</span>
-                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</p>
-                </div>
-              </div>
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="team-member">
-                <div class="member-image">
-                  <img src="assets/img/person/person-f-7.webp" class="img-fluid" alt="" loading="lazy">
-                </div>
-                <div class="member-content">
-                  <h3>Emily Rodriguez</h3>
-                  <span>Project Manager</span>
-                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
-                </div>
-              </div>
-            </div><!-- End slide item -->
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- /Team Section -->
 
     <!-- Features Tabs Section -->
     <section id="features-tabs" class="features-tabs section">

@@ -658,7 +658,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 5px 0;
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -712,12 +712,11 @@ section,
 --------------------------------------------------------------*/
 .hero {
   padding-top: 120px;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   align-items: center;
   position: relative;
   background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 96%) 0%, var(--background-color) 40%, color-mix(in srgb, var(--accent-color), transparent 98%) 100%);
-  padding-bottom: 60px;
 }
 
 .hero::before {
@@ -1007,9 +1006,10 @@ section,
   }
 }
 
+
 @media (max-width: 576px) {
   .hero {
-    padding: 100px 0 30px;
+    padding: 120px 0 2px;
   }
 
   .hero .hero-badge {
@@ -3036,7 +3036,7 @@ section,
 }
 
 .team .team-slider {
-  padding: 10px 5px 40px;
+  padding: 5px 5px 5px;
 }
 
 .team .team-slider .swiper-wrapper {
