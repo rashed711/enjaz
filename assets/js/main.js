@@ -45,7 +45,6 @@
         mobileNavToogle();
       }
     });
-
   });
 
   /**
