@@ -53,24 +53,23 @@
                     style="max-height: 90px; width: auto;">
                 <div>
                     <h1 class="mt-1">
-    <strong>Enjaz</strong> <span style="font-size: 0.5em;">Technology & Contracting</span>
-</h1>
-                    <!-- <h1 class="sitename" style="margin:0; line-height:1;">Enjaz Technology & Contracting</h1> -->
-                    <!-- <h3 style="margin:0; font-size:16px; line-height:1.2; color:var(--accent-color);">Technology &
-                        Contracting
-                    </h3> -->
+                        <strong data-lang="company_name">Enjaz</strong> <span data-lang="company_slogan"
+                            style="font-size: 0.5em;">Technology & Contracting</span>
+                    </h1>
                 </div>
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="#hero" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#Products">Products</a></li>
-                    <li><a href="#features-tabs">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#hero" class="active" data-lang="nav_home">Home</a></li>
+                    <li><a href="#about" data-lang="nav_about">About</a></li>
+                    <li><a href="#products" data-lang="nav_products">Products</a></li>
+                    <li><a href="#features-tabs" data-lang="nav_services">Services</a></li>
+                    <li><a href="#contact" data-lang="nav_contact">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
+            <button id="lang-toggle" class="btn btn-sm btn-outline-secondary language-toggle-btn"
+                style="margin-left: 20px;">AR</button>
         </div>
     </header>
 
@@ -80,22 +79,17 @@
             <div class="container">
                 <div class="hero-wrapper">
                     <div class="hero-main-content text-center">
-                        <h2 class="hero-title" data-aos="zoom-in" data-aos-delay="200">
+                        <h2 class="hero-title" data-aos="zoom-in" data-aos-delay="200" data-lang="hero_title_1">
                             Welcome to<br>
                         </h2>
-                        <h3 class="hero-title" data-aos="zoom-in" data-aos-delay="200">
+                        <h3 class="hero-title" data-aos="zoom-in" data-aos-delay="200" data-lang="hero_title_2">
                             <span style="color:var(--accent-color)">Enjaz</span> for Technology & Contracting<br>
                         </h3>
-                        <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                        <p class="hero-description" data-aos="fade-up" data-aos-delay="300"
+                            data-lang="hero_description">
                             Your trusted partner in air outlets, cable trays, cable trunk, and electromechanical
                             services, delivering quality solutions that meet international standards.
                         </p>
-                        <!-- <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
-                            <a href="#about" class="action-btn primary">
-                                <span>Get Started</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -107,8 +101,8 @@
                 <div class="row align-items-center justify-content-between g-lg-5">
                     <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
                         <div class="content">
-                            <h3 class="mb-4">About Us</h3>
-                            <h4 class="mb-4">We aim to provide innovative
+                            <h3 class="mb-4" data-lang="about_title">About Us</h3>
+                            <h4 class="mb-4" data-lang="about_subtitle">We aim to provide innovative
                                 engineering solutions
                                 with a strong focus on quality and reliability.</h4>
                             <div class="features-list mt-5" data-aos="fade-up" data-aos-delay="400">
@@ -116,24 +110,27 @@
                                     <div class="col-md-6">
                                         <div class="feature-item">
                                             <i class="bi bi-award"></i>
-                                            <h5>Vision:</h5>
-                                            <p>To be a leading name in technology and contracting across Egypt and the
+                                            <h5 data-lang="about_vision_title">Vision:</h5>
+                                            <p data-lang="about_vision_text">To be a leading name in technology and
+                                                contracting across Egypt and the
                                                 Middle East.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="feature-item">
                                             <i class="bi bi-graph-up-arrow"></i>
-                                            <h5>Mission:</h5>
-                                            <p>Delivering trusted products and services that empower modern
+                                            <h5 data-lang="about_mission_title">Mission:</h5>
+                                            <p data-lang="about_mission_text">Delivering trusted products and services
+                                                that empower modern
                                                 infrastructure projects.</p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="feature-item">
                                             <i class="bi bi-lightbulb"></i>
-                                            <h5>Values:</h5>
-                                            <p>Quality - Innovation - Commitment - Successful Partnerships.</p>
+                                            <h5 data-lang="about_values_title">Values:</h5>
+                                            <p data-lang="about_values_text">Quality - Innovation - Commitment -
+                                                Successful Partnerships.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -150,12 +147,12 @@
             </div>
         </section>
 
-
-        <section id="Products" class="team section">
+        <section id="products" class="team section">
             <div class="container" data-aos="fade-up" data-aos-delay="10">
                 <div class="container section-title">
-                    <h3>Our Products</h3>
-                    <p>We offer a wide range of products designed to meet the highest standards</p>
+                    <h3 data-lang="products_section_title">Our Products</h3>
+                    <p data-lang="products_section_subtitle">We offer a wide range of products designed to meet the
+                        highest standards</p>
                 </div>
                 <div class="team-slider swiper init-swiper" data-aos="fade-up" data-aos-delay="300">
                     <script type="application/json" class="swiper-config">
@@ -198,11 +195,10 @@
                                         alt="Image of a high-performance square air diffuser" loading="lazy">
                                 </div>
                                 <div class="member-content">
-                                    <h4>Square Diffuser</h4>
-                                    <span>Air Diffuser</span>
-                                    <p>A high-performance square air diffuser for balanced and comfortable air
-                                        distribution in HVAC
-                                        systems.</p>
+                                    <h4 data-lang="product_square_diffuser_title">Square Diffuser</h4>
+                                    <span data-lang="product_square_diffuser_category">Air Diffuser</span>
+                                    <p data-lang="product_square_diffuser_description">A high-performance square air
+                                        diffuser for balanced and comfortable air distribution in HVAC systems.</p>
                                 </div>
                             </div>
                         </div>
@@ -215,10 +211,10 @@
                                         loading="lazy">
                                 </div>
                                 <div class="member-content">
-                                    <h4>Round Diffuser</h4>
-                                    <span>Air Diffuser</span>
-                                    <p>A round air diffuser designed to provide an efficient and uniform airflow in
-                                        different spaces.</p>
+                                    <h4 data-lang="product_round_diffuser_title">Round Diffuser</h4>
+                                    <span data-lang="product_round_diffuser_category">Air Diffuser</span>
+                                    <p data-lang="product_round_diffuser_description">A round air diffuser designed to
+                                        provide an efficient and uniform airflow in different spaces.</p>
                                 </div>
                             </div>
                         </div>
@@ -231,11 +227,11 @@
                                         loading="lazy">
                                 </div>
                                 <div class="member-content">
-                                    <h4>Exhaust Diffuser</h4>
-                                    <span>Air Diffuser</span>
-                                    <p>An ideal exhaust air diffuser for high-efficiency air extraction, ensuring proper
-                                        ventilation for
-                                        the space.</p>
+                                    <h4 data-lang="product_exhaust_diffuser_title">Exhaust Diffuser</h4>
+                                    <span data-lang="product_exhaust_diffuser_category">Air Diffuser</span>
+                                    <p data-lang="product_exhaust_diffuser_description">An ideal exhaust air diffuser
+                                        for high-efficiency air extraction, ensuring proper ventilation for the space.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -248,10 +244,11 @@
                                         loading="lazy">
                                 </div>
                                 <div class="member-content">
-                                    <h4>Round Grille</h4>
-                                    <span>Air Grille</span>
-                                    <p>A round air grille with a durable and attractive design, used in heating and
-                                        ventilation systems.
+                                    <h4 data-lang="product_round_grille_title">Round Grille</h4>
+                                    <span data-lang="product_round_grille_category">Air Grille</span>
+                                    <p data-lang="product_round_grille_description">A round air grille with a durable
+                                        and
+                                        attractive design, used in heating and ventilation systems.
                                     </p>
                                 </div>
                             </div>
@@ -265,10 +262,11 @@
                                         loading="lazy">
                                 </div>
                                 <div class="member-content">
-                                    <h4>Jet Diffuser</h4>
-                                    <span>Air Diffuser</span>
-                                    <p>A jet air diffuser provides a strong, concentrated airflow, suitable for large
-                                        spaces.</p>
+                                    <h4 data-lang="product_jet_diffuser_title">Jet Diffuser</h4>
+                                    <span data-lang="product_jet_diffuser_category">Air Diffuser</span>
+                                    <p data-lang="product_jet_diffuser_description">A jet air diffuser provides a
+                                        strong,
+                                        concentrated airflow, suitable for large spaces.</p>
                                 </div>
                             </div>
                         </div>
@@ -281,10 +279,10 @@
                                         loading="lazy">
                                 </div>
                                 <div class="member-content">
-                                    <h4>Disc Valve</h4>
-                                    <span>Valves</span>
-                                    <p>A disc valve for precise control of airflow, ensuring reliable and long-lasting
-                                        performance.</p>
+                                    <h4 data-lang="product_disc_valve_title">Disc Valve</h4>
+                                    <span data-lang="product_disc_valve_category">Valves</span>
+                                    <p data-lang="product_disc_valve_description">A disc valve for precise control of
+                                        airflow, ensuring reliable and long-lasting performance.</p>
                                 </div>
                             </div>
                         </div>
@@ -297,10 +295,10 @@
                                         loading="lazy">
                                 </div>
                                 <div class="member-content">
-                                    <h4>Jet Nozzle</h4>
-                                    <span>Nozzles</span>
-                                    <p>A jet nozzle provides a strong, directed airflow, ideal for industrial and
-                                        commercial applications.
+                                    <h4 data-lang="product_jet_nozzle_title">Jet Nozzle</h4>
+                                    <span data-lang="product_jet_nozzle_category">Nozzles</span>
+                                    <p data-lang="product_jet_nozzle_description">A jet nozzle provides a strong,
+                                        directed airflow, ideal for industrial and commercial applications.
                                     </p>
                                 </div>
                             </div>
@@ -315,10 +313,11 @@
                                         loading="lazy">
                                 </div>
                                 <div class="member-content">
-                                    <h4>Cable Tray</h4>
-                                    <span>Cable Tray</span>
-                                    <p>Cable trays offer a robust and practical solution for organizing and protecting
-                                        electrical cables in diverse projects.</p>
+                                    <h4 data-lang="product_cable_tray_title">Cable Tray</h4>
+                                    <span data-lang="product_cable_tray_category">Cable Tray</span>
+                                    <p data-lang="product_cable_tray_description">Cable trays offer a robust and
+                                        practical solution for organizing and protecting electrical cables in diverse
+                                        projects.</p>
                                 </div>
                             </div>
                         </div>
@@ -332,10 +331,11 @@
                                         loading="lazy">
                                 </div>
                                 <div class="member-content">
-                                    <h4>cable trunk</h4>
-                                    <span>cable trunk</span>
-                                    <p>Cable trunks are designed for neat cable management and distribution, providing
-                                        effective protection and easy maintenance.</p>
+                                    <h4 data-lang="product_cable_trunk_title">cable trunk</h4>
+                                    <span data-lang="product_cable_trunk_category">cable trunk</span>
+                                    <p data-lang="product_cable_trunk_description">Cable trunks are designed for neat
+                                        cable management and distribution, providing effective protection and easy
+                                        maintenance.</p>
                                 </div>
                             </div>
                         </div>
@@ -349,10 +349,11 @@
                                         loading="lazy">
                                 </div>
                                 <div class="member-content">
-                                    <h4>Fire Damper</h4>
-                                    <span>Fire Damper</span>
-                                    <p>Fire dampers are built to prevent the spread of fire and smoke through ducts,
-                                        certified to meet international safety standards.</p>
+                                    <h4 data-lang="product_fire_damper_title">Fire Damper</h4>
+                                    <span data-lang="product_fire_damper_category">Fire Damper</span>
+                                    <p data-lang="product_fire_damper_description">Fire dampers are built to prevent the
+                                        spread of fire and smoke through ducts, certified to meet international safety
+                                        standards.</p>
                                 </div>
                             </div>
                         </div>
@@ -366,10 +367,12 @@
                                         loading="lazy">
                                 </div>
                                 <div class="member-content">
-                                    <h4>Duct Accessories</h4>
-                                    <span>Duct Accessories</span>
-                                    <p>Duct accessories include a wide range of components that ensure high efficiency
-                                        and seamless performance for HVAC systems.</p>
+                                    <h4 data-lang="product_duct_accessories_title">Duct Accessories</h4>
+                                    <span data-lang="product_duct_accessories_category">Duct Accessories</span>
+                                    <p data-lang="product_duct_accessories_description">Duct accessories include a wide
+                                        range of components that ensure high efficiency and seamless performance for
+                                        HVAC
+                                        systems.</p>
                                 </div>
                             </div>
                         </div>
@@ -390,17 +393,17 @@
                             <div class="col-md-4" data-aos="fade-up" data-aos-delay="20">
                                 <p><span data-purecounter-start="0" data-purecounter-end="372"
                                         data-purecounter-duration="1" class="purecounter"></span>+</p>
-                                <p>Users</p>
+                                <p data-lang="stats_users">Users</p>
                             </div>
                             <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
                                 <p><span data-purecounter-start="0" data-purecounter-end="99"
                                         data-purecounter-duration="1" class="purecounter"></span>%</p>
-                                <p>Uptime</p>
+                                <p data-lang="stats_uptime">Uptime</p>
                             </div>
                             <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
                                 <p><span data-purecounter-start="0" data-purecounter-end="24"
                                         data-purecounter-duration="1" class="purecounter"></span>/7</p>
-                                <p>Support</p>
+                                <p data-lang="stats_support">Support</p>
                             </div>
                         </div>
                     </div>
@@ -412,8 +415,7 @@
 
         <section id="main-products" class="features section">
             <div class="container section-title">
-                <h3>Main Products</h3>
-                <!-- <p>We offer a wide range of products designed to meet the highest standards</p> -->
+                <h3 data-lang="main_products_title">Main Products</h3>
             </div>
 
             <div class="container" data-aos="fade-up" data-aos-delay="10">
@@ -421,26 +423,26 @@
                     <div class="col-lg-6" data-aos="fade-right" data-aos-delay="10">
                         <div class="intro-content">
                             <hr>
-                            <h4>* Air Outlets for HVAC Systems.</h4>
+                            <h4 data-lang="main_product_1_title">* Air Outlets for HVAC Systems.</h4>
                             <hr>
-                            <h4>* Volume Dampers.</h4>
+                            <h4 data-lang="main_product_2_title">* Volume Dampers.</h4>
                             <hr>
-                            <h4>* Cable Trays & Cable Trunk.</h4>
+                            <h4 data-lang="main_product_3_title">* Cable Trays & Cable Trunk.</h4>
                             <hr>
-                            <h4>* Duct Accessories.</h4>
+                            <h4 data-lang="main_product_4_title">* Duct Accessories.</h4>
                             <hr>
                             <div class="feature-stats">
                                 <div class="stat-item">
                                     <span class="stat-number">150+</span>
-                                    <span class="stat-label">Products</span>
+                                    <span class="stat-label" data-lang="main_product_stat_1">Products</span>
                                 </div>
                                 <div class="stat-item">
                                     <span class="stat-number">99.9%</span>
-                                    <span class="stat-label">Uptime</span>
+                                    <span class="stat-label" data-lang="main_product_stat_2">Uptime</span>
                                 </div>
                                 <div class="stat-item">
                                     <span class="stat-number">24/7</span>
-                                    <span class="stat-label">Support</span>
+                                    <span class="stat-label" data-lang="main_product_stat_3">Support</span>
                                 </div>
                             </div>
                         </div>
@@ -460,10 +462,7 @@
                             <div class="feature-icon">
                                 <i class="bi bi-lightning-charge"></i>
                             </div>
-                            <h5>Air Outlets</h5>
-                            <!-- <p>Enjaz provides high-quality air outlets designed for efficient air distribution in HVAC
-                                systems,
-                                ensuring durability and compliance with international standards.</p> -->
+                            <h5 data-lang="main_product_item_1_title">Air Outlets</h5>
                             <hr>
                             <div class="image-wrapper">
                                 <img src="assets/img/about/about-products-enjaz.webp" class="img-fluid rounded"
@@ -483,10 +482,7 @@
                             <div class="feature-icon">
                                 <i class="bi bi-shield-check"></i>
                             </div>
-                            <h5>Volume Dampers</h5>
-                            <!-- <p>Volume dampers provide precise control of airflow, ensuring efficient balancing within
-                                HVAC systems.
-                            </p> -->
+                            <h5 data-lang="main_product_item_2_title">Volume Dampers</h5>
                             <hr>
                             <div class="image-wrapper">
                                 <img src="assets/img/products/VOLUME-DAMPER.png" class="img-fluid rounded"
@@ -506,10 +502,7 @@
                             <div class="feature-icon">
                                 <i class="bi bi-people-fill"></i>
                             </div>
-                            <h5>Fire Dampers</h5>
-                            <!-- <p>Fire dampers are built to prevent the spread of fire and smoke through ducts, certified
-                                to meet
-                                international safety standards.</p> -->
+                            <h5 data-lang="main_product_item_3_title">Fire Dampers</h5>
                             <hr>
                             <div class="image-wrapper">
                                 <img src="assets/img/products/fire Dampers.png" class="img-fluid rounded"
@@ -529,10 +522,7 @@
                             <div class="feature-icon">
                                 <i class="bi bi-graph-up-arrow"></i>
                             </div>
-                            <h5>Cable Tray</h5>
-                            <!-- <p>Cable trays offer a robust and practical solution for organizing and protecting
-                                electrical cables in
-                                diverse projects.</p> -->
+                            <h5 data-lang="main_product_item_4_title">Cable Tray</h5>
                             <hr>
                             <div class="image-wrapper">
                                 <img src="assets/img/products/Cable Tray.png" class="img-fluid rounded"
@@ -552,10 +542,7 @@
                             <div class="feature-icon">
                                 <i class="bi bi-gear-fill"></i>
                             </div>
-                            <h5>Cable Trunk</h5>
-                            <!-- <p>Cable trunks are designed for neat cable management and distribution, providing effective
-                                protection
-                                and easy maintenance.</p> -->
+                            <h5 data-lang="main_product_item_5_title">Cable Trunk</h5>
                             <hr>
                             <div class="image-wrapper">
                                 <img src="assets/img/products/cable trunk.png" class="img-fluid rounded"
@@ -575,10 +562,7 @@
                             <div class="feature-icon">
                                 <i class="bi bi-cloud-arrow-up"></i>
                             </div>
-                            <h5>Duct Accessories</h5>
-                            <!-- <p>Duct accessories include a wide range of components that ensure high efficiency and
-                                seamless
-                                performance for HVAC systems.</p> -->
+                            <h5 data-lang="main_product_item_6_title">Duct Accessories</h5>
                             <hr>
                             <div class="image-wrapper">
                                 <img src="assets/img/products/Duct Accessories.jpg" class="img-fluid rounded"
@@ -601,7 +585,7 @@
             <div class="container" data-aos-delay="10">
                 <div class="tabs-wrapper">
                     <div class="container section-title">
-                        <h3>Services</h3>
+                        <h3 data-lang="services_title">Services</h3>
                     </div>
                     <ul class="nav nav-tabs" data-aos-delay="10">
                         <li class="nav-item">
@@ -610,7 +594,7 @@
                                     <i class="bi bi-shield-shaded"></i>
                                 </div>
                                 <div class="tab-content">
-                                    <h6>Design & Technical Support</h6>
+                                    <h6 data-lang="service_design_title">Design & Technical Support</h6>
                                 </div>
                             </a>
                         </li>
@@ -620,7 +604,7 @@
                                     <i class="bi bi-rocket-takeoff"></i>
                                 </div>
                                 <div class="tab-content">
-                                    <h6>Manufacturing & Supply</h6>
+                                    <h6 data-lang="service_manufacture_title">Manufacturing & Supply</h6>
                                 </div>
                             </a>
                         </li>
@@ -630,7 +614,7 @@
                                     <i class="bi bi-lightning-charge"></i>
                                 </div>
                                 <div class="tab-content">
-                                    <h6>Integrated Electromechanical Solutions</h6>
+                                    <h6 data-lang="service_solutions_title">Integrated Electromechanical Solutions</h6>
                                 </div>
                             </a>
                         </li>
@@ -640,7 +624,7 @@
                                     <i class="bi bi-heart-pulse"></i>
                                 </div>
                                 <div class="tab-content">
-                                    <h6>Installation & Maintenance</h6>
+                                    <h6 data-lang="service_installation_title">Installation & Maintenance</h6>
                                 </div>
                             </a>
                         </li>
@@ -654,40 +638,50 @@
                                         <div class="icon-badge">
                                             <i class="bi bi-rocket-takeoff"></i>
                                         </div>
-                                        <h4>Products with international quality standards</h4>
-                                        <p>We provide advanced manufacturing and reliable supply of HVAC and electrical
+                                        <h4 data-lang="service_manufacture_headline">Products with international quality
+                                            standards</h4>
+                                        <p data-lang="service_manufacture_description">We provide advanced manufacturing
+                                            and reliable supply of HVAC and electrical
                                             products, ensuring
                                             precision and durability.</p>
                                         <div class="feature-grid">
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>Production of air outlets and dampers.</span>
+                                                <span data-lang="service_manufacture_feature_1">Production of air
+                                                    outlets
+                                                    and dampers.</span>
                                             </div>
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>Cable trays and trunking systems.</span>
+                                                <span data-lang="service_manufacture_feature_2">Cable trays and trunking
+                                                    systems.</span>
                                             </div>
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>High-efficiency duct accessories.</span>
+                                                <span data-lang="service_manufacture_feature_3">High-efficiency duct
+                                                    accessories.</span>
                                             </div>
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>On-time delivery for projects.</span>
+                                                <span data-lang="service_manufacture_feature_4">On-time delivery for
+                                                    projects.</span>
                                             </div>
                                         </div>
                                         <div class="stats-row">
                                             <div class="stat-item">
                                                 <div class="stat-number">99%</div>
-                                                <div class="stat-label">Uptime</div>
+                                                <div class="stat-label" data-lang="service_manufacture_stat_1">Uptime
+                                                </div>
                                             </div>
                                             <div class="stat-item">
                                                 <div class="stat-number">372+</div>
-                                                <div class="stat-label">Users</div>
+                                                <div class="stat-label" data-lang="service_manufacture_stat_2">Users
+                                                </div>
                                             </div>
                                             <div class="stat-item">
                                                 <div class="stat-number">24/7</div>
-                                                <div class="stat-label">Support</div>
+                                                <div class="stat-label" data-lang="service_manufacture_stat_3">Support
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -701,7 +695,7 @@
                                             <div class="floating-card">
                                                 <i class="bi bi-headset"></i>
                                                 <div class="card-content">
-                                                    <span>Support</span>
+                                                    <span data-lang="service_floating_card_label">Support</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -716,26 +710,30 @@
                                         <div class="icon-badge">
                                             <i class="bi bi-shield-shaded"></i>
                                         </div>
-                                        <h4>Complete engineering solutions</h4>
-                                        <p>Our engineering team delivers tailored designs and expert technical support
-                                            to ensure optimal
-                                            system performance.</p>
+                                        <h4 data-lang="service_design_headline">Complete engineering solutions</h4>
+                                        <p data-lang="service_design_description">Our engineering team delivers tailored
+                                            designs and expert technical support to ensure optimal system performance.
+                                        </p>
                                         <div class="feature-grid">
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>Efficient HVAC system design.</span>
+                                                <span data-lang="service_design_feature_1">Efficient HVAC system
+                                                    design.</span>
                                             </div>
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>Specialized technical consultation.</span>
+                                                <span data-lang="service_design_feature_2">Specialized technical
+                                                    consultation.</span>
                                             </div>
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>Energy optimization solutions.</span>
+                                                <span data-lang="service_design_feature_3">Energy optimization
+                                                    solutions.</span>
                                             </div>
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>Ongoing project support.</span>
+                                                <span data-lang="service_design_feature_4">Ongoing project
+                                                    support.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -749,7 +747,7 @@
                                             <div class="floating-card">
                                                 <i class="bi bi-headset"></i>
                                                 <div class="card-content">
-                                                    <span>Support</span>
+                                                    <span data-lang="service_floating_card_label">Support</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -764,26 +762,33 @@
                                         <div class="icon-badge">
                                             <i class="bi bi-lightning-charge"></i>
                                         </div>
-                                        <h4>Systems designed for maximum efficiency</h4>
-                                        <p>We deliver fully integrated HVAC and electromechanical solutions that enhance
-                                            overall project
-                                            performance.</p>
+                                        <h4 data-lang="service_solutions_headline">Systems designed for maximum
+                                            efficiency</h4>
+                                        <p data-lang="service_solutions_description">We deliver fully integrated HVAC
+                                            and
+                                            electromechanical solutions that enhance overall project performance.</p>
                                         <div class="feature-grid">
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>HVAC and electrical system integration.</span>
+                                                <span data-lang="service_solutions_feature_1">HVAC and electrical system
+                                                    integration.</span>
                                             </div>
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>Compliance with international standards.</span>
+                                                <span data-lang="service_solutions_feature_2">Compliance with
+                                                    international
+                                                    standards.</span>
                                             </div>
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>Execution of projects of all scales.</span>
+                                                <span data-lang="service_solutions_feature_3">Execution of projects of
+                                                    all
+                                                    scales.</span>
                                             </div>
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>Cost reduction through unified solutions.</span>
+                                                <span data-lang="service_solutions_feature_4">Cost reduction through
+                                                    unified solutions.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -797,7 +802,7 @@
                                             <div class="floating-card">
                                                 <i class="bi bi-headset"></i>
                                                 <div class="card-content">
-                                                    <span>Support</span>
+                                                    <span data-lang="service_floating_card_label">Support</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -812,40 +817,50 @@
                                         <div class="icon-badge">
                                             <i class="bi bi-heart-pulse"></i>
                                         </div>
-                                        <h4>Reliable operation and continuous performance</h4>
-                                        <p>We offer professional installation and scheduled maintenance services to
-                                            ensure system
-                                            reliability and longevity.</p>
+                                        <h4 data-lang="service_installation_headline">Reliable operation and continuous
+                                            performance</h4>
+                                        <p data-lang="service_installation_description">We offer professional
+                                            installation and scheduled maintenance services to ensure system reliability
+                                            and
+                                            longevity.</p>
                                         <div class="feature-grid">
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>HVAC and electrical system installation.</span>
+                                                <span data-lang="service_installation_feature_1">HVAC and electrical
+                                                    system
+                                                    installation.</span>
                                             </div>
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>Preventive maintenance programs.</span>
+                                                <span data-lang="service_installation_feature_2">Preventive maintenance
+                                                    programs.</span>
                                             </div>
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>Fast and efficient repairs.</span>
+                                                <span data-lang="service_installation_feature_3">Fast and efficient
+                                                    repairs.</span>
                                             </div>
                                             <div class="feature-item">
                                                 <i class="bi bi-check-circle-fill"></i>
-                                                <span>Extended equipment lifespan.</span>
+                                                <span data-lang="service_installation_feature_4">Extended equipment
+                                                    lifespan.</span>
                                             </div>
                                         </div>
                                         <div class="stats-row">
                                             <div class="stat-item">
                                                 <div class="stat-number">24/7</div>
-                                                <div class="stat-label">Available</div>
+                                                <div class="stat-label" data-lang="service_installation_stat_1">
+                                                    Available</div>
                                             </div>
                                             <div class="stat-item">
                                                 <div class="stat-number">2min</div>
-                                                <div class="stat-label">Response</div>
+                                                <div class="stat-label" data-lang="service_installation_stat_2">Response
+                                                </div>
                                             </div>
                                             <div class="stat-item">
                                                 <div class="stat-number">Expert</div>
-                                                <div class="stat-label">Team</div>
+                                                <div class="stat-label" data-lang="service_installation_stat_3">Team
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -859,7 +874,7 @@
                                             <div class="floating-card">
                                                 <i class="bi bi-headset"></i>
                                                 <div class="card-content">
-                                                    <span>Support</span>
+                                                    <span data-lang="service_floating_card_label">Support</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -878,23 +893,24 @@
             <div class="container" data-aos-delay="10">
                 <div class="advertise-1 d-flex flex-column flex-lg-row gap-4 align-items-center position-relative">
                     <div class="content-left flex-grow-1" data-aos="fade-right" data-aos-delay="10">
-                        <span class="badge text-uppercase mb-2">Don't Miss!</span>
-                        <h3>Request a customized quotation</h3>
-                        <p class="my-4">Get a quotation tailored to your project’s needs with flexible solutions,
-                            competitive
+                        <span class="badge text-uppercase mb-2" data-lang="cta_badge">Don't Miss!</span>
+                        <h3 data-lang="cta_title">Request a customized quotation</h3>
+                        <p class="my-4" data-lang="cta_description">Get a quotation tailored to your project’s needs
+                            with
+                            flexible solutions, competitive
                             pricing, and guaranteed quality.</p>
                         <div class="features d-flex flex-wrap gap-3 mb-4">
                             <div class="feature-item">
                                 <i class="bi bi-check-circle-fill"></i>
-                                <span>Premium Support</span>
+                                <span data-lang="cta_feature_1">Premium Support</span>
                             </div>
                             <div class="feature-item">
                                 <i class="bi bi-check-circle-fill"></i>
-                                <span>Guaranteed product quality</span>
+                                <span data-lang="cta_feature_2">Guaranteed product quality</span>
                             </div>
                             <div class="feature-item">
                                 <i class="bi bi-check-circle-fill"></i>
-                                <span>Competitive pricing options</span>
+                                <span data-lang="cta_feature_3">Competitive pricing options</span>
                             </div>
                         </div>
                     </div>
@@ -914,7 +930,7 @@
 
         <section id="contact" class="contact section">
             <div class="container section-title">
-                <h3>Contact</h3>
+                <h3 data-lang="contact_title">Contact</h3>
             </div>
 
             <div class="container" data-aos-delay="10">
@@ -922,8 +938,9 @@
                     <div class="col-lg-6 mb-5" data-aos="fade-right" data-aos-delay="10">
                         <div class="contact-info-section">
                             <div class="info-header">
-                                <h4>We are here to support you every step of the way</h4>
-                                <p>Whether you need technical consultation, a quotation, or a trusted partner for your
+                                <h4 data-lang="contact_headline">We are here to support you every step of the way</h4>
+                                <p data-lang="contact_description">Whether you need technical consultation, a quotation,
+                                    or a trusted partner for your
                                     next project, our
                                     team is ready to assist you.</p>
                             </div>
@@ -933,11 +950,17 @@
                                         <i class="bi bi-geo-alt-fill"></i>
                                     </div>
                                     <div class="info-content">
-                                        <h6>Visit Our Office</h6>
-                                        <p class="mt-3"><strong>Head Office:</strong> <span>284 El Yasmine 8, First
-                                                Settlement, New Cairo</span></p>
-                                        <p class="mt-3"><strong>Factory:</strong> <span>Industrial Zone, El-Bate'a Road,
-                                                Qalyoub, Qalyubia</span></p>
+                                        <h6 data-lang="contact_address_title">Visit Our Office</h6>
+                                        <p class="mt-3">
+                                            <strong data-lang="contact_address_head_office_label">Head Office:</strong>
+                                            <span data-lang="contact_address_head_office_value">284 El Yasmine 8, First
+                                                Settlement, New Cairo</span>
+                                        </p>
+                                        <p class="mt-3">
+                                            <strong data-lang="contact_address_factory_label">Factory:</strong>
+                                            <span data-lang="contact_address_factory_value">Industrial Zone, El-Bate'a
+                                                Road, Qalyoub, Qalyubia</span>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="info-item" data-aos-delay="10">
@@ -945,8 +968,8 @@
                                         <i class="bi bi-envelope-fill"></i>
                                     </div>
                                     <div class="info-content">
-                                        <h6>Send Email</h6>
-                                        <p>contact@Enjaz-eg.com</p>
+                                        <h6 data-lang="contact_email_title">Send Email</h6>
+                                        <p data-lang="contact_email_value">contact@Enjaz-eg.com</p>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -954,8 +977,8 @@
                                         <i class="bi bi-telephone-fill"></i>
                                     </div>
                                     <div class="info-content">
-                                        <h6>Call Direct</h6>
-                                        <p>+20 100 77 99 363</p>
+                                        <h6 data-lang="contact_phone_title">Call Direct</h6>
+                                        <p data-lang="contact_phone_value">+20 100 77 99 363</p>
                                     </div>
                                 </div>
                                 <div class="info-item">
@@ -963,17 +986,17 @@
                                         <i class="bi bi-clock-fill"></i>
                                     </div>
                                     <div class="info-content">
-                                        <h6>Business Hours</h6>
-                                        <p>Sun-thu: 8AM - 5PM</p>
+                                        <h6 data-lang="contact_hours_title">Business Hours</h6>
+                                        <p data-lang="contact_hours_value">Sun-thu: 8AM - 5PM</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="social-contact">
-                                <h6>Follow Our Journey</h6>
+                                <h6 data-lang="contact_social_title">Follow Our Journey</h6>
                                 <div class="social-icons">
-                                    <a href="#"><i class="bi bi-facebook"></i></a>
-                                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                    <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                                    <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -981,7 +1004,7 @@
                     <div class="col-lg-6" data-aos="fade-left" data-aos-delay="10">
                         <div class="contact-form-wrapper">
                             <div class="form-header">
-                                <h4>Send Us Message</h4>
+                                <h4 data-lang="contact_form_title">Send Us Message</h4>
                             </div>
                             <iframe data-tally-src="https://tally.so/embed/waLjLq?dynamicHeight=1" loading="lazy"
                                 width="100%" height="409" frameborder="0" marginheight="0" marginwidth="0"
@@ -1005,24 +1028,32 @@
                 <div class="row gy-4">
                     <div class="col-lg-4 col-md-6 footer-about">
                         <a href="index.html" class="logo d-flex align-items-center">
-                            <span class="sitename">Enjaz</span>
+                            <span class="sitename" data-lang="footer_company_name">Enjaz</span>
                         </a>
                         <div class="footer-contact pt-3">
-                            <p class="mt-3"><strong>Factory:</strong> <span>Industrial Zone, El-Bate'a Road, Qalyoub,
-                                    Qalyubia</span></p>
-                            <p class="mt-3"><strong>Phone:</strong> <span>+20 100 77 99 363</span></p>
-                            <p class="mt-3"><strong>Email:</strong> <span>contact@Enjaz-eg.com</span></p>
+                            <p class="mt-3">
+                                <strong data-lang="footer_factory_label">Factory:</strong>
+                                <span data-lang="footer_factory_value">Industrial Zone, El-Bate'a Road, Qalyoub,
+                                    Qalyubia</span>
+                            </p>
+                            <p class="mt-3">
+                                <strong data-lang="footer_phone_label">Phone:</strong>
+                                <span data-lang="footer_phone_value">+20 100 77 99 363</span>
+                            </p>
+                            <p class="mt-3">
+                                <strong data-lang="footer_email_label">Email:</strong>
+                                <span data-lang="footer_email_value">contact@Enjaz-eg.com</span>
+                            </p>
                         </div>
                     </div>
 
                     <div class="col-lg-2 col-md-3 footer-links">
-                        <h5>Useful Links</h5>
+                        <h5 data-lang="footer_useful_links_title">Useful Links</h5>
                         <ul>
-                            <li><a href="#hero">Home</a></li>
-                            <li><a href="#about">About us</a></li>
-                            <!-- <li><a href="#features">Products</a></li> -->
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contact">Contact us</a></li>
+                            <li><a href="#hero" data-lang="nav_home">Home</a></li>
+                            <li><a href="#about" data-lang="nav_about">About us</a></li>
+                            <li><a href="#projects" data-lang="nav_projects">Projects</a></li>
+                            <li><a href="#contact" data-lang="nav_contact">Contact us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1034,10 +1065,11 @@
                 class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
                 <div class="d-flex flex-column align-items-center align-items-lg-start">
                     <div>
-                        © Copyright <strong><span>ENJAZ</span></strong>. All Rights Reserved
+                        <span data-lang="footer_copyright_text_1">© Copyright</span>
+                        <strong><span data-lang="footer_company_name_2">ENJAZ</span></strong>.
+                        <span data-lang="footer_copyright_text_2">All Rights Reserved</span>
                     </div>
                     <div class="credits">
-                        <!-- Designed by <a href="#">ENJAZ</a> -->
                     </div>
                 </div>
                 <div class="social-links order-first order-lg-last mb-3 mb-lg-0">

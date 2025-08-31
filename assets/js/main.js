@@ -189,4 +189,58 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+
+  // =========================================================================
+  // Language switcher functionality
+  // =========================================================================
+
+  const langToggleBtn = document.getElementById('lang-toggle');
+  const elementsToTranslate = document.querySelectorAll('[data-lang]');
+
+  // Function to load translations from JSON files
+  async function loadTranslations(lang) {
+    try {
+      const response = await fetch(`assets/js/translations/${lang}.json`);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return await response.json();
+    } catch (error) {
+      console.error('Error loading translations:', error);
+      return {};
+    }
+  }
+
+  // Function to set the language and update the UI
+  async function setLanguage(lang) {
+    const translations = await loadTranslations(lang);
+    
+    document.documentElement.lang = lang;
+    document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+    elementsToTranslate.forEach(element => {
+      const key = element.getAttribute('data-lang');
+      if (translations[key]) {
+        element.textContent = translations[key];
+      }
+    });
+
+    langToggleBtn.textContent = lang === 'ar' ? 'EN' : 'AR';
+    localStorage.setItem('lang', lang);
+  }
+
+  // Event listener for the language toggle button
+  if (langToggleBtn) {
+    langToggleBtn.addEventListener('click', () => {
+      const currentLang = localStorage.getItem('lang') || 'en';
+      const newLang = currentLang === 'en' ? 'ar' : 'en';
+      setLanguage(newLang);
+    });
+  }
+
+  // Set initial language on page load
+  window.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('lang') || 'en';
+    setLanguage(savedLang);
+  });
 })();
