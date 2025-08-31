@@ -225,7 +225,7 @@
       }
     });
 
-    langToggleBtn.textContent = lang === 'ar' ? 'EN' : 'AR';
+    langToggleBtn.textContent = lang === 'ar' ? 'English' : 'العربية';
     localStorage.setItem('lang', lang);
   }
 
