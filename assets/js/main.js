@@ -214,9 +214,18 @@
   // Function to set the language and update the UI
   async function setLanguage(lang) {
     const translations = await loadTranslations(lang);
+    const body = document.body;
     
     document.documentElement.lang = lang;
-    document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+    if (lang === 'ar') {
+        body.classList.add('font-ar');
+        body.classList.remove('font-en');
+    } else {
+        body.classList.add('font-en');
+        body.classList.remove('font-ar');
+    }
 
     elementsToTranslate.forEach(element => {
       const key = element.getAttribute('data-lang');
@@ -225,7 +234,7 @@
       }
     });
 
-    langToggleBtn.textContent = lang === 'ar' ? 'English' : 'العربية';
+    langToggleBtn.textContent = lang === 'ar' ? 'EN' : 'AR';
     localStorage.setItem('lang', lang);
   }
 
