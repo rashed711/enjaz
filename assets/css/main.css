@@ -3823,13 +3823,13 @@ section,
 .whatsapp_float_image {
     position: fixed;
     bottom: 70px;
-    right: 10px;
+    right: 15px;
     z-index: 1000; /* لضمان ظهور الزر فوق باقي المحتوى */
     display: block; /* لضمان أن الروابط تعمل بشكل صحيح حول الصورة */
 }
 
 .whatsapp_logo_img {
-    width: 60px; /* حجم الصورة، يمكنك تعديله */
+    width: 50px; /* حجم الصورة، يمكنك تعديله */
     height: auto; /* يحافظ على نسبة أبعاد الصورة */
     border-radius: 50%; /* إذا أردت أن تكون دائرية، أزلها إذا أردت الشكل الأصلي */
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* لإضافة ظل بسيط (اختياري) */
